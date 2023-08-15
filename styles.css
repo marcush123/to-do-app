@@ -1,20 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500&display=swap");
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Inter Tight", sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background-color: #f4f4f4;
+  min-height: 70vh;
+  background-color: #3aafa9;
+}
+
+#todo {
+  margin-left: 44px;
 }
 
 .task-container {
-  background-color: white;
+  background-color: #2b7a77a1;
   padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.37);
   width: 300px;
+  display: grid;
+  justify-content: center;
 }
 
 ul {
@@ -27,9 +35,44 @@ li {
 }
 
 button {
-  background-color: #007bff;
+  font-family: "Inter Tight", sans-serif;
+  background-color: #17252a;
   color: white;
   border: none;
   padding: 5px 10px;
   cursor: pointer;
+  margin-top: 15px;
+  border-radius: 20px;
+  width: 100px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-left: 38px;
+}
+
+input {
+  font-family: "Inter Tight", sans-serif;
+  border: 2px solid #c4c3c3;
+  appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -maz-appearance: none;
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 5px;
+  width: 150px;
+  outline: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+  border: 2px solid #222;
+  transition: 0.3s ease;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input::placeholder {
+  color: #222;
+  transition: color 0.3s ease;
 }
