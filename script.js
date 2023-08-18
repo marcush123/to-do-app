@@ -9,7 +9,7 @@ addTaskButton.addEventListener("click", () => {
     li.textContent = taskText;
 
     const removeButton = document.createElement("button");
-    removeButton.textContent = "✔️";
+    removeButton.textContent = "✅";
     removeButton.addEventListener("click", () => {
       taskList.removeChild(li);
     });
